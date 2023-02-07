@@ -9,6 +9,65 @@
 body{
     overflow-x: hidden;
 }
+.pro{
+    
+    padding: 15px;
+    margin: 5px ;
+    color: #e5e5e5;
+    text-align: center;
+    background-color: palevioletred;
+   
+}
+.pro1{
+    text-align: center;
+    padding: 0;
+    margin: 55px ;
+    color: #e5e5e5;
+    
+    
+   
+}
+
+
+.main{
+    text-align: center;
+    background-color: #4CAF50;
+}
+
+
+form {
+    width: 700px;
+    margin: 100px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+    
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
 .hero-header{
     width: 100%;
     height: 100%;

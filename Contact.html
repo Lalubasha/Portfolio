@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Font awesome cdn font icons css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-l"></i>
+                    <div class="logo-text">Lalu basha</div>
+                </div>
+                <nav> 
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Resume.html">Resume</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+
+                    </ul>
+                </nav>
+                       
+                <main class="main">
+                    <div>
+                        <h2 class="pro1">Contact Us</h2>
+                    </div>
+                   
+                    <form action="submit-form.php" method="post">
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" required>
+              
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required>
+              
+                      <label for="subject">Subject:</label>
+                      <input type="text" id="subject" name="subject" required>
+              
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" required></textarea>
+              
+                      <input type="submit" value="Submit">
+                    </form>
+                  </main>
+                
+            </header>
+        </div>
+    </div>
+</body>
+</html>
