@@ -7,29 +7,27 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <!--Font awesome cdn font icons css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
     <div class="hero-header">
         <div class="wrapper">
             <header>
                 <div class="logo">
-                    <i class="fa-solid fa-a"></i>
+                    <i class="fa-solid fa-l"></i>
                     <div class="logo-text">Lalu basha</div>
                 </div>
-                <nav>
-                    <div class="tooglebtn">
+                <nav> 
+                    <div class="togglebtn">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
                     <ul class="navlinks">
-                        <li><a href="#Home">Home</a></li>
-                      
-                        <li><a href="#Resume">Resume</a></li>
-                        <li><a href="#Blog">Blog</a></li>
-                        <li><a href="#Contact">Contact</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
 
                     </ul>
                 </nav>
@@ -38,46 +36,46 @@
                 <div class="hero-pic">
                     <img src="newimg.jpg" alt="profile pic">
                 </div>
-            
                 <div class="hero-text">
-                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h5>Hi I'm <span class="input"></span></h5>
                     <h1>Lalu Basha</h1>
                     <p>
-                        I am web developer 
-
+                        I am web developer and A web developer is a professional who builds and maintains websites. They are responsible for writing the code that creates the web pages and ensuring that the website is both functional and accessible to all users. Web developers use languages such as HTML, CSS, and JavaScript to create the look and feel of the website, as well as back-end languages such as Ruby on Rails or PHP to manage the website's data and interactivity. They may also work with databases and server-side technologies to store and retrieve information that is displayed on the website. Good web developers have a solid understanding of user experience (UX) design and search engine optimization (SEO) best practices, and they stay up-to-date with the latest web development technologies and trends.
                     </p>
-                </div>  <br>
-                 <div class="btn-group">
-                    <a href="#CV" class="btn active">Download CV</a>
-                    <a href="#Contact" class="btn">Contact</a>
+                    <br><br>
+                    <div class="btn-group">
+                        <a href="#CV" class="btn active">Download CV</a>
+                        <a href="#Contact" class="btn">Contact</a>
+                    </div>
+                    <br><br>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/lalu-basha-a22b281b7/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_lalu__basha_/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Lalubasha"><i class="fa-brands fa-github"></i></a>
+                    </div> 
                 </div>
-                <div class="social">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                </div>
-                 
-             </div>
+            </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
     <script>
         var tooglebtn=document.querySelector(".togglebtn");
-        var nav=document.querySelector("navlinks");
+        var nav=document.querySelector(".navlinks");
         var links=document.querySelector(".navlinks li");
 
         tooglebtn.addEventListener("click",function(){
             this.classList.toggle("click");
-            nav.classList.toggle("open");
+            nav.classList.toggle("open"); 
         })
-
         var typed=new Typed(".input",{
             strings:["Frontend Developer","Web Developer"],
-            typeSpeed:70,
-            backSpeed:55,
+            typeSpeed:90,
+            backspeed:70,
             loop:true
         })
+       
     </script>
 </body>
 </html>

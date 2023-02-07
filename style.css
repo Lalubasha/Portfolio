@@ -32,6 +32,7 @@ header{
 .logo{
     display: inline-flex;
     justify-content: center;
+    align-items: center;
 }
 .logo i{
     height: 45px;
@@ -51,7 +52,7 @@ header{
     font-weight: 500;
     color: #fff;
 }
-nav.togglebtn{
+nav .togglebtn{
     width: 35px;
     height: 35px;
     position: absolute;
@@ -68,9 +69,9 @@ nav .togglebtn span{
     width: 100%;
     height: 3px;
     transition: 0.3s;
-    transition-property: transform, opacity;
+    transition-property: opecity;
 }
-nav.navlinks{
+nav .navlinks{
     list-style-type: none;
 }
 nav .navlinks li{
@@ -88,7 +89,7 @@ nav .navlinks li a{
 }
 .container .hero-pic{
     width: 300px;
-    height: 300px;
+    height: 300px; 
     border-radius: 50%;
     overflow: hidden;
     border: 15px solid #444;
@@ -135,10 +136,22 @@ nav .navlinks li a{
     margin-right: 7px;
     border-radius: 30px;
     border: 2px solid #e5e5e5;
-box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
 }
 .btn.active{
     border-color: #077ced;
+    
+}
+.hero-text .social i{
+    color: #e5e5e5;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.5s;
+
+}
+.hero-text .social i:hover{
+    color: #077ced;
+    transform: rotate(360deg);
 }
 @media(max-width:930px)
 {
@@ -153,5 +166,54 @@ box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
         margin-top: 12px;
 
     }
+    .click span:first-child{
+        transform: rotate(-40deg);
+    }
+    .click span:nth-child(2){
+        opacity: 0;
+        margin: 0;
+    }
+    .click span:last-child{
+        transform: rotate(45deg);
+        top: 0;
+
+    }
+    nav .navkinks{
+        position: absolute;
+        top: 110px;
+        right: 0%;
+        bottom: 0;
+        width: 60%;
+        height:100vh;
+        background-color: #222;
+        z-index: 3;
+        box-shadow: 5px 13px 30px rgba(0,0,0,0,1);
+        transform: 0.5s;
+        padding: 25px 0px;
+    }
+    nav .navlinks li{
+        display: block;
+    }
+    nav .navlinks li a{
+        display: block;
+        margin-bottom:15px ;
+        text-align: center;
+
+    }
+    nav .navkinks.open{
+        right: 0;
+
+    }
     
+}
+@media(max-width:768px)
+{
+    .container{
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    .hero-text{
+        padding: 40px 0px;
+
+    }
 }
