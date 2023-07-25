@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div>
+                    <a href="index.html" class="logo">
+                        <i class="fa-solid fa-l"></i>
+                        <div class="logo-text">Lalu basha</div>
+                    </a>
+                </div>
+                <nav> 
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Projects.html">Projects</a></li>
+                        <li><a href="Resume.html">CV</a></li>
+                       
+                        <li><a href="Contact.html">Contact Me</a></li>
+
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="profilepicture.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input"></span></h5>
+                    <h1>Lalu Basha</h1>
+                    <p>My skills are:</p><br>
+                    <h5>Programming Languages: </h5> <p>Java, Python.</p><br>
+                    
+                    <h5>Web technologies:</h5><p>Html, Css,JavaScript, React.js and Node.js.</p>
+                    <br>
+                   
+                    <p>
+                        As an enthusiastic and dedicated web developer, I am deeply passionate about crafting captivating and user-friendly interfaces for web applications. My experience, both through formal coursework and personal projects, has allowed me to cultivate extensive expertise in this realm.
+
+                        My proficiency spans a wide range of essential technologies, including HTML, CSS, and JavaScript, as well as popular frameworks like React.js, Node.js, Express, and Java. Through hands-on involvement in projects, I have successfully executed two notable applications: a dynamic Travel Planner leveraging React.js, and an efficient ATM pin matching machine, thoughtfully developed with HTML, CSS, JavaScript, Java, Java Spring Boot, and SQL for database management.
+
+                        As an aspiring full-stack web developer, I am genuinely excited about embracing new technologies and continually expanding my skillset. The opportunity to collaborate with innovative teams and tackle complex challenges further fuels my drive to excel in the ever-evolving world of web development.
+
+                     </p>
+                    <br><br>
+                    <div class="btn-group">
+                        <a href="./Lalubasha_Cv_.pdf" download="Lalubasha_Cv_" class="btn active">Download CV</a>
+                        <a href="Contact.html" class="btn">Contact</a>
+                    </div>
+                    <br><br>
+                    <div class="social">
+                        
+                        <a href="https://www.linkedin.com/in/lalu-basha-a22b281b7/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_lalu__basha_/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/shaik.lalu.121"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/Lalubasha"><i class="fa-brands fa-github"></i></a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+   
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var tooglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        tooglebtn.addEventListener("click",function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open"); 
+        })
+        var typed=new Typed(".input",{
+            strings:["Frontend Web Developer","FullStack Developer","Software Developer"],
+            typeSpeed:90,
+            backspeed:70,
+            loop:true
+        })
+       
+    </script>
+</body>
+</html>
